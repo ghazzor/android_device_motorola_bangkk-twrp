@@ -30,9 +30,9 @@ From user 13 T3TCS33.18-48-6-2 release-keys
 - Mouse through USB OTG
 - Flashing zips
 - MTP && USB Mode Storage
+- Qualcomm Decryption
 
 ### What ISN'T working!? D:
-- Decryption
 - Touch on custom roms (it works fine in stock rom)
 
 ### See Wiki for build this source
