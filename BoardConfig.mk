@@ -204,8 +204,8 @@ TW_INCLUDE_RESETPROP := true
 #TW_NO_SCREEN_BLANK := true
 TW_INCLUDE_FASTBOOTD := true
 TW_HAS_EDL_MODE := true
-TW_Y_OFFSET := 115
-TW_H_OFFSET := -115
+TW_Y_OFFSET := 110
+TW_H_OFFSET := -110
 
 # Battery
 TW_USE_LEGACY_BATTERY_SERVICES := true
@@ -246,17 +246,6 @@ ALLOW_MISSING_DEPENDENCIES := true
 ifneq ($(wildcard bootable/recovery/installer/.),)
     USE_RECOVERY_INSTALLER := true
     RECOVERY_INSTALLER_PATH := bootable/recovery/installer
-endif
-
-# Custom TWRP Versioning
-ifneq ($(wildcard device/common/version-info/.),)
-    CUSTOM_TWRP_VERSION_PREFIX := UNOFFICIAL
-
-    include device/common/version-info/custom_twrp_version.mk
-
-    ifeq ($(CUSTOM_TWRP_VERSION),)
-        CUSTOM_TWRP_VERSION := $(shell date +%Y%m%d)-01
-    endif
 endif
 #
 # end local build flags
