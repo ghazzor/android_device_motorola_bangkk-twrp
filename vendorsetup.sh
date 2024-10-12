@@ -7,8 +7,8 @@ export OF_IGNORE_LOGICAL_MOUNT_ERRORS=1
 export OF_ENABLE_LPTOOLS=1
 
 export FOX_VIRTUAL_AB_DEVICE=1
-export FOX_RECOVERY_SYSTEM_PARTITION="/dev/block/mapper/system"
-export FOX_RECOVERY_VENDOR_PARTITION="/dev/block/mapper/vendor"
+#export FOX_RECOVERY_SYSTEM_PARTITION="/dev/block/mapper/system"
+#export FOX_RECOVERY_VENDOR_PARTITION="/dev/block/mapper/vendor"
 
 export OF_USE_GREEN_LED="0"
 export FOX_DELETE_AROMAFM=1
