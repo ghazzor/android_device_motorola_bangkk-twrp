@@ -75,6 +75,12 @@ PRODUCT_PACKAGES += \
     android.hardware.boot@1.1-impl-qti.recovery \
     bootctrl.$(PRODUCT_PLATFORM).recovery
 
+# Erofs stuff
+PRODUCT_PACKAGES += \
+    mkfs.erofs.recovery \
+    dump.erofs.recovery \
+    fsck.erofs.recovery
+
 # Dynamic partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
